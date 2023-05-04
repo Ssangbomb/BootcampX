@@ -8,7 +8,7 @@ const pool = new Pool({
 });
 
 const cohort = process.argv[2];
-const value = [`%${cohort}%`]
+const value = `%${cohort}%`
 const numbOFstudents = process.argv[3];
 const query = `
 SELECT students.id as student_id, students.name as name, cohorts.name as cohort
